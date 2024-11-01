@@ -7,5 +7,12 @@
 
 {% block content %}
     <h3>iam home </h3>
+    <ul>
+        
+        {% for post in object_list %}
+            <li>{{post.post}}</li>
+        {% endfor %}
+            
+    </ul>
     <a href="{% url 'about' %}">go to about!!</a>
 {% endblock content %}
